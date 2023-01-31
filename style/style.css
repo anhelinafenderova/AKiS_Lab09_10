@@ -19,11 +19,32 @@
     display: grid;
     grid-template-columns: 2fr 2fr 6fr;
     grid-template-rows: repeat(11, auto);
+    grid-template-areas:
+      "div_head_area  div_head_area           div_head_area"
+      "div_nav_area   div_art_header_area     div_art_header_area"
+      "div_nav_area   div_art_img1_area       div_art_text1_area"
+      "div_nav_area   div_art_img1_area       div_art_text1_area"
+      "div_nav_area   div_art_img2_area       div_art_text2_area"
+      "div_nav_area   div_art_img2_area       div_art_text2_area"
+      "div_nav_area   div_art_img3_area       div_art_text3_area"
+      "div_nav_area   div_art_img3_area       div_art_text3_area"
+      "div_nav_area   div_art_img4_area       div_art_text4_area"
+      "div_nav_area   div_art_img4_area       div_art_text4_area"
+      "div_nav_area   div_art_img5_area       div_art_text5_area"
+      "div_nav_area   div_art_img5_area       div_art_text5_area"
+      "div_nav_area   div_art_img6_area       div_art_text6_area"
+      "div_nav_area   div_art_img6_area       div_art_text6_area"
+      "div_nav_area   div_art_img7_area       div_art_text7_area"
+      "div_nav_area   div_art_img7_area       div_art_text7_area"
+      "div_nav_area   div_art_img8_area       div_art_text8_area"
+      "div_nav_area   div_art_img8_area       div_art_text8_area"
+      "div_nav_area   div_art_video_area      div_art_video_area"
+      "div_nav_area   div_art_video_area      div_art_video_area"
+      "div_foot_area  div_foot_area           div_foot_area";
   }
   
   .div_head {
-    grid-row: 1/2;
-    grid-column: 1/4;
+    grid-area: div_head_area;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,8 +63,7 @@
   }
   
   .div_nav {
-    grid-row: 2/11;
-    grid-column: 1/2;
+    grid-area: div_nav_area;
     background-color: #cccccc;
     padding: 20px;
   }
@@ -58,135 +78,116 @@
   }
   
   .div_art_header {
-    grid-row: 2/3;
-    grid-column: 2/4;
+    grid-area: div_art_header_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   
   .div_art_img1 {
-    grid-row: 3/5;
-    grid-column: 2/3;
+    grid-area: div_art_img1_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_text1 {
-    grid-row: 3/5;
-    grid-column: 3/4;
+    grid-area: div_art_text1_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_img2 {
-    grid-row: 3/5;
-    grid-column: 2/3;
+    grid-area: div_art_img2_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_text2 {
-    grid-row: 3/5;
-    grid-column: 3/4;
+    grid-area: div_art_text2_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_img3 {
-    grid-row: 3/5;
-    grid-column: 2/3;
+    grid-area: div_art_img3_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_text3 {
-    grid-row: 3/5;
-    grid-column: 3/4;
+    grid-area: div_art_text3_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_img4 {
-    grid-row: 3/5;
-    grid-column: 2/3;
+    grid-area: div_art_img4_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_text4 {
-    grid-row: 3/5;
-    grid-column: 3/4;
+    grid-area: div_art_text4_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_img5 {
-    grid-row: 3/5;
-    grid-column: 2/3;
+    grid-area: div_art_img5_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_text5 {
-    grid-row: 3/5;
-    grid-column: 3/4;
+    grid-area: div_art_text5_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_img6 {
-    grid-row: 3/5;
-    grid-column: 2/3;
+    grid-area: div_art_img6_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_text6 {
-    grid-row: 3/5;
-    grid-column: 3/4;
+    grid-area: div_art_text6_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_img7 {
-    grid-row: 3/5;
-    grid-column: 2/3;
+    grid-area: div_art_img7_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_text7 {
-    grid-row: 3/5;
-    grid-column: 3/4;
+    grid-area: div_art_text7_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_img8 {
-    grid-row: 3/5;
-    grid-column: 2/3;
+    grid-area: div_art_img8_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_text8 {
-    grid-row: 3/5;
-    grid-column: 3/4;
+    grid-area: div_art_text8_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_art_video {
-    grid-row: 9/11;
-    grid-column: 2/4;
+    grid-area: div_art_video_area;
     padding: 10px;
     background-color: #f1f1f1;
   }
   
   .div_foot {
-    grid-row: 11/12;
-    grid-column: 1/4;
+    grid-area: div_foot_area;
     background-color: rgb(182, 182, 182);
     padding: 10px;
     text-align: center;
@@ -195,190 +196,55 @@
   
   
   @media screen and (max-width: 1024px) {
-    .div_art_img1 {
-      grid-row: 3/4;
-      grid-column: 2/4;
-    }
-  
-    .div_art_text1 {
-      grid-row: 4/5;
-      grid-column: 2/4;
-    }
-  
-    .div_art_img2 {
-      grid-row: 5/6;
-      grid-column: 2/4;
-    }
-  
-    .div_art_text2 {
-      grid-row: 6/7;
-      grid-column: 2/4;
-    }
-  
-    .div_art_img3 {
-      grid-row: 7/8;
-      grid-column: 2/4;
-    }
-  
-    .div_art_text3 {
-      grid-row: 8/9;
-      grid-column: 2/4;
-    }
-  
-    .div_art_img4 {
-      grid-row: 9/10;
-      grid-column: 2/4;
-    }
-  
-    .div_art_text4 {
-      grid-row: 10/11;
-      grid-column: 2/4;
-    }
-  
-    .div_art_img5 {
-      grid-row: 11/12;
-      grid-column: 2/4;
-    }
-  
-    .div_art_text5 {
-      grid-row: 12/13;
-      grid-column: 2/4;
-    }
-  
-    .div_art_img6 {
-      grid-row: 13/14;
-      grid-column: 2/4;
-    }
-  
-    .div_art_text6 {
-      grid-row: 14/15;
-      grid-column: 2/4;
-    }
-  
-    .div_art_img7 {
-      grid-row: 15/16;
-      grid-column: 2/4;
-    }
-  
-    .div_art_text7 {
-      grid-row: 16/17;
-      grid-column: 2/4;
-    }
-  
-    .div_art_img8 {
-      grid-row: 17/18;
-      grid-column: 2/4;
-    }
-  
-    .div_art_text8 {
-      grid-row: 18/19;
-      grid-column: 2/4;
+    .main_page {
+      grid-template-areas:
+        "div_head_area  div_head_area           div_head_area"
+        "div_nav_area   div_art_header_area     div_art_header_area"
+        "div_nav_area   div_art_img1_area       div_art_img1_area"
+        "div_nav_area   div_art_text1_area      div_art_text1_area"
+        "div_nav_area   div_art_img2_area       div_art_img2_area"
+        "div_nav_area   div_art_text2_area      div_art_text2_area"
+        "div_nav_area   div_art_img3_area       div_art_img3_area"
+        "div_nav_area   div_art_text3_area      div_art_text3_area"
+        "div_nav_area   div_art_img4_area       div_art_img4_area"
+        "div_nav_area   div_art_text4_area      div_art_text4_area"
+        "div_nav_area   div_art_img5_area       div_art_img5_area "
+        "div_nav_area   div_art_text5_area      div_art_text5_area"
+        "div_nav_area   div_art_img6_area       div_art_img6_area"
+        "div_nav_area   div_art_text6_area      div_art_text6_area"
+        "div_nav_area   div_art_img7_area       div_art_img7_area"
+        "div_nav_area   div_art_text7_area      div_art_text7_area"
+        "div_nav_area   div_art_img8_area       div_art_img8_area"
+        "div_nav_area   div_art_text8_area      div_art_text8_area"
+        "div_nav_area   div_art_video_area      div_art_video_area"
+        "div_nav_area   div_art_video_area      div_art_video_area"
+        "div_foot_area  div_foot_area           div_foot_area";
     }
   }
   
   @media screen and (max-width: 600px) {
-    .div_head {
-      grid-row: 1/2;
-      grid-column: 1/4;
-    }
-  
-    .div_nav {
-      grid-row: 2/3;
-      grid-column: 1/4;
-    }
-  
-    .div_art_header {
-      grid-row: 3/4;
-      grid-column: 1/4;
-    }
-  
-    .div_art_img1 {
-      grid-row: 4/5;
-      grid-column: 1/4;
-    }
-  
-    .div_art_text1 {
-      grid-row: 5/6;
-      grid-column: 1/4;
-    }
-  
-    .div_art_img2 {
-      grid-row: 6/7;
-      grid-column: 1/4;
-    }
-  
-    .div_art_text2 {
-      grid-row: 7/8;
-      grid-column: 1/4;
-    }
-  
-    .div_art_img3 {
-      grid-row: 8/9;
-      grid-column: 1/4;
-    }
-  
-    .div_art_text3 {
-      grid-row: 9/10;
-      grid-column: 1/4;
-    }
-  
-    .div_art_img4 {
-      grid-row: 10/11;
-      grid-column: 1/4;
-    }
-  
-    .div_art_text4 {
-      grid-row: 11/12;
-      grid-column: 1/4;
-    }
-  
-    .div_art_img5 {
-      grid-row: 12/13;
-      grid-column: 1/4;
-    }
-  
-    .div_art_text5 {
-      grid-row: 13/14;
-      grid-column: 1/4;
-    }
-  
-    .div_art_img6 {
-      grid-row: 14/15;
-      grid-column: 1/4;
-    }
-  
-    .div_art_text6 {
-      grid-row: 15/16;
-      grid-column: 1/4;
-    }
-  
-    .div_art_img7 {
-      grid-row: 16/17;
-      grid-column: 1/4;
-    }
-  
-    .div_art_text7 {
-      grid-row: 17/18;
-      grid-column: 1/4;
-    }
-  
-    .div_art_img8 {
-      grid-row: 18/19;
-      grid-column: 1/4;
-    }
-  
-    .div_art_text8 {
-      grid-row: 19/20;
-      grid-column: 1/4;
-    }
-  
-    .div_art_video {
-      grid-row: 20/21;
-      grid-column: 1/4;
-    }
-  
-    .div_foot {
-      grid-row: 21/22;
-      grid-column: 1/4;
+    .main_page {
+      grid-template-areas:
+        "div_head_area          div_head_area           div_head_area"
+        "div_nav_area           div_nav_area            div_nav_area"
+        "div_art_header_area    div_art_header_area     div_art_header_area"
+        "div_art_img1_area      div_art_img1_area       div_art_img1_area"
+        "div_art_text1_area     div_art_text1_area      div_art_text1_area"
+        "div_art_img2_area      div_art_img2_area       div_art_img2_area"
+        "div_art_text2_area     div_art_text2_area      div_art_text2_area"
+        "div_art_img3_area      div_art_img3_area       div_art_img3_area"
+        "div_art_text3_area     div_art_text3_area      div_art_text3_area"
+        "div_art_img4_area      div_art_img4_area       div_art_img4_area"
+        "div_art_text4_area     div_art_text4_area      div_art_text4_area"
+        "div_art_text5_area     div_art_img5_area       div_art_img5_area "
+        "div_nav_area           div_art_text5_area      div_art_text5_area"
+        "div_art_img6_area      div_art_img6_area       div_art_img6_area"
+        "div_art_text6_area     div_art_text6_area      div_art_text6_area"
+        "div_art_img7_area      div_art_img7_area       div_art_img7_area"
+        "div_art_text7_area     div_art_text7_area      div_art_text7_area"
+        "div_art_img8_area      div_art_img8_area       div_art_img8_area"
+        "div_art_text8_area     div_art_text8_area      div_art_text8_area"
+        "div_art_video_area     div_art_video_area      div_art_video_area"
+        "div_foot_area          div_foot_area           div_foot_area";
     }
   }
