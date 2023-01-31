@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style/style.css" type="text/css" />
-  <title>AKiS_Lab09-10</title>
+  <title>AKiS_Lab09-10 GRID</title>
 </head>
 <body>
-  <header>
-    <div>
-      <img src="img/logo.png" width="250" height="75" alt="Brak logo" />
+  <div class="main_page">
+    <div class="div_head">
+      <div>
+        <img src="img/logo.png" width="250" height="75" alt="Brak logo" />
+      </div>
+      <h1>
+        Aplikacje Klienckie i Serwerowe, Lab 09-10
+      </h1>
     </div>
-    <h1>
-      Aplikacje Klienckie i Serwerowe, Lab 09-10
-    </h1>
-  </header>
-  <section>
-    <nav>
+    <div class="div_nav">
       <ul>
         <li>
           <a href="https://www.pk.edu.pl" target="_blank">Politechnika</a>
@@ -26,15 +26,15 @@
         <li><a href="https:/www.youtube.com/watch?v=GfXyn_2QnFo" target="_blank">Procesory</a></li>
         <li><a href="#movie">Rodzaje komputerów</a></li>
       </ul>
-    </nav>
-    <article>
+    </div>
+    <div class="div_art_header">
       <div id="computers">
         <h2>Wybrane komponenty komputerowe</h2>
       </div>
-      <div>
+      <div class="div_art_img1">
         <img src="img/img01.png" alt="Img 01" width="320" height="240" />
       </div>
-      <div>
+      <div class="div_art_text1">
         <p>
           Procesor (CPU) to jeden z najważniejszych podzespołów
           komputerowych. Jego zadaniem jest wymiana informacji między
@@ -50,10 +50,10 @@
           procesory Intel mają od 4 do 18 rdzeni, natomiast AMD od 4 do 16 rdzeni.<br />
         </p>
       </div>
-      <div>
+      <div class="div_art_img2">
         <img src="img/img02.png" alt="Img 02" width="320" height="240" />
       </div>
-      <div>
+      <div class="div_art_text2">
         <p>
           Router Wi-Fi to urządzenie sieciowe, które rozdziela sygnał internetowy.
           Pozwala na jednoczesne korzystanie z usług internetowych z kilku
@@ -70,10 +70,10 @@
           dostawców wykorzystujących ten rodzaj łącza (Neostrada TP, Netia Dialog).<br />
         </p>
       </div>
-      <div>
+      <div class="div_art_img3">
         <img src="img/img03.png" alt="Img 03" width="320" height="240" />
       </div>
-      <div>
+      <div class="div_art_text3">
         <p>
           Karta graficzna, często też nazywana akceleratorem grafiki, to element
           komputera generujcy sygnał wizyjny (obraz) dla monitora. Podstawowym
@@ -91,10 +91,10 @@
           standardy PCI, AGP lub PCI-Express.<br />
         </p>
       </div>
-      <div>
+      <div class="div_art_img4">
         <img src="img/img04.png" alt="Img 04" width="320" height="240" />
       </div>
-      <div>
+      <div class="div_art_text4">
         <p>
           Mysz to urządzenie wskazujące używane podczas pracy z interfejsem graficznym
           komputera. Umożliwia poruszanie kursorem po ekranie komputera poprzez przesuwanie
@@ -110,10 +110,10 @@
           pod myszą, soczewkę ogniskującą, oraz matrycę CCD.<br />
         </p>
       </div>
-      <div>
+      <div class="div_art_img5">
         <img src="img/img05.png" alt="Img 05" width="320" height="240" />
       </div>
-      <div>
+      <div class="div_art_text5">
         <p>
           Klawiatura komputerowa jest to uporządkowany zestaw klawiszy służący do
           ręcznego sterowania urządzeniem lub ręcznego wprowadzania danych. W zależności
@@ -127,10 +127,10 @@
           najczęściej do obsługi multimediów. <br />
         </p>
       </div>
-      <div>
+      <div class="div_art_img6">
         <img src="img/img06.png" alt="Img 06" width="320" height="240" />
       </div>
-      <div>
+      <div class="div_art_text6">
         <p>
           Płyta główna (ang. motherboard, mainboard) jest to komponent urządzenia
           elektronicznego w postaci obwodu drukowanego, na którym montuje się
@@ -145,10 +145,10 @@
           równoległy, USB).<br />
         </p>
       </div>
-      <div>
+      <div class="div_art_img7">
         <img src="img/img07.png" alt="Img 07" width="320" height="240" />
       </div>
-      <div>
+      <div class="div_art_text7">
         <p>
           Pamięć RAM komputera jest to bardzo szybki nośnik, na którym znajdują się
           informacje o działających programach i procesach w systemie. W dużej mierze
@@ -166,10 +166,10 @@
           3200 MT/s, natomiast pobór energii jest o wiele niższy. <br />
         </p>
       </div>
-      <div>
+      <div class="div_art_img8">
         <img src="img/img08.png" alt="Img 08" width="320" height="240" />
       </div>
-      <div>
+      <div class="div_art_text8">
         <p>
           Monitor komputerowy to ogólna nazwa jednego z urządzeń wyjścia do
           bezpośredniej komunikacji użytkownika z komputerem. Zadaniem monitora
@@ -187,19 +187,19 @@
           pozwalają uzyskać znacznie lepszą jakość obrazu i wyższe rozdzielczości. <br />
         </p>
       </div>
-      <div>
+      <div class="div_art_video">
         <h2 id="movie">Krótki film o rodzajach komputerów</h2>
         <video width="512" controls>
           <source src="img/movie.mp4" type="video/mp4" /> Brak obsługi video HTML
         </video>
       </div>
-  </section>
-  <footer>
-    <h4>
-      Autor: <i>Anhelina Fenderowa</i> Krakowska Akademia
-      im. Frycza Modrzewskiego
-    </h4>
-  </footer>
-  </article>
+    </div>
+    <div class="div_foot">
+      <h4>
+        Autor: <i>Anhelina Fenderowa</i> Krakowska Akademia
+        im. Frycza Modrzewskiego
+      </h4>
+    </div>
+  </div>
 </body>
 </html>
